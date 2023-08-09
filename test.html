@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #ul{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    li{
+        margin: 0 auto;
+    }
+</style>
+<body>
+    <div id="parent">
+        <p>Existing Element 1</p>
+        <p>Existing Element 2</p>
+      </div>
+</body>
+
+<script>
+const parentElement = document.getElementById('parent');
+
+// Create a new element
+const newElement = document.createElement('p');
+newElement.textContent = 'New Element';
+
+// Get the reference node (second paragraph)
+const referenceNode = parentElement.children[1];
+
+// Insert the new element before the reference node
+
+parentElement.insertBefore(newElement, referenceNode);
+</script>
+</html>
+
+
+
+
+document.querySelector("#square-box > div.square.corner-box")
