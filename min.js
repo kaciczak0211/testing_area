@@ -40,6 +40,21 @@
 //     }
 // });
 
+let links = document.getElementById("links")
+
+
+
+
+
+document.addEventListener('click', (event)=>{
+    if(links.contains(event.target)){
+        menuMobile.classList.remove("show")
+        openIcon.style.display = "flex"
+        closeIcon.style.display = "none"
+        console.log("click")
+    }
+})
+
 
 document.addEventListener('click', (event)=>{
     if(!menuMobile.contains(event.target) && !menuIcon.contains(event.target)){
@@ -48,8 +63,6 @@ document.addEventListener('click', (event)=>{
         closeIcon.style.display = "none"
     }
 })
-
-
 
 // move animation
 
@@ -241,3 +254,13 @@ window.addEventListener("scroll", function() {
 //     console.log(squareArray);
 //     newDiv.style.backgroundColor = actualBackgroundColor;
 // })
+
+
+
+
+// move to section
+
+
+
+
+
