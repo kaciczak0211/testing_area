@@ -31,8 +31,17 @@ html{
 .content{
     display: flex;
     justify-content: space-between;
+    background-color: #202123;
     align-items: center;
     border: 1px #e5e7eb solid;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    left: auto;
+    width: 100%;
+    z-index: 5;
 }
 
 #menu{
@@ -285,6 +294,9 @@ h2{
     color: #e5e7eb;
     text-align: center;
     font-size: 30px;
+    background-color: #81c7bc;
+    padding: 10px;
+    margin: 20px;
 }
 
 .icons-extra{
@@ -329,7 +341,7 @@ h4, .lang{
 #check{
     display: flex;
     justify-content: center;
-    background-color: #444654;
+    background-color: #202123;
     color: #e5e7eb;
     font-size: 30px;
     padding-top: 10px;

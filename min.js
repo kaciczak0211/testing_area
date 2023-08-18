@@ -258,9 +258,23 @@ window.addEventListener("scroll", function() {
 
 
 
-// move to section
+// sticky menu
 
 
+let navbar = document.querySelector(".content");
 
+let sticky = navbar.offsetTop;
 
+window.onscroll = function(){
+    stickyfn();
+}
 
+function stickyfn(){
+    if (window.scrollY >= sticky) {
+        navbar.classList.add("sticky");
+        menuMobile.style.position = "fixed"
+      } else {
+        navbar.classList.remove("sticky");
+        menuMobile.style.position = "absolute"
+      }
+}
