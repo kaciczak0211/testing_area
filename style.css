@@ -316,6 +316,11 @@ h2{
     padding: 2vh;
 }
 
+#download:hover{
+    background-color: #81c7bc;
+    cursor: pointer;
+}
+
 .projects{
     display: flex;
     flex-direction: column;
@@ -385,4 +390,45 @@ p{
     text-align: center;
 }
 
+/* hide desktop elements */
 
+.desktop-menu{
+    display: none;
+}
+
+
+@media only screen and (min-width: 800px) {
+    .content{
+        display: none;
+    }
+    .desktop-menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    #links-desktop{
+        display: flex;
+        gap: 2rem;
+    }
+    .headline{
+        display: none;
+    }
+    .headline-desktop{
+        display: flex;
+        justify-content: space-between;
+    }
+    .myname{
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+    }
+    h1{
+        padding: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    img{
+        height: 20rem;
+    }
+  }
