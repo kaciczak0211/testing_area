@@ -7,9 +7,7 @@
 }
 
 html{
-    background-image: url(wave-haikei\ \(1\).svg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #202123;
 }
 
 #up{
@@ -165,16 +163,6 @@ li{
 
 
 
-@media (min-width: 1250px) {
-    a:hover{
-        background-color: gold;
-        color:  #202123;
-    }
-    li:hover{
-        background-color: gainsboro;
-        color: #202123;
-    }
-  }
 
 /* content inside pages */
 
@@ -396,6 +384,9 @@ p{
     display: none;
 }
 
+.simple-text-desktop{
+    display: none;
+}
 
 @media only screen and (min-width: 800px) {
     .content{
@@ -405,7 +396,7 @@ p{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 80px;
     }
     #links-desktop{
         display: flex;
@@ -417,10 +408,10 @@ p{
     .headline-desktop{
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        margin-bottom: 80px;
     }
     .myname{
-        display: flex;
-        flex-direction: column;
         margin: 20px;
     }
     h1{
@@ -431,4 +422,57 @@ p{
     img{
         height: 20rem;
     }
+    .hello{
+        font-size: 64px;
+        text-align: center;
+        color: #81c7bc;
+    }
+    .main-info{
+        font-size: 20px;
+        padding: 10px;
+        color: #e5e7eb;
+        margin-bottom: 20px;
+    }
+    .simple-tekst{
+        display: none;
+    }
+    .projects{
+        display: none;
+    }
+    .contact{
+        display: none;
+    }
+    .simple-text-desktop{
+        display: flex;
+        margin: 20px;
+        font-size: 20px;
+        padding: 10px;
+        color: #e5e7eb;
+    }
+  }
+  .whatido{
+    background-color: #81c7bc;
+    padding: 3rem;
+    line-height: 1.6;
+  }
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  li{
+    background-color: #81c7bc;
+    font-size: 20px;
+  }
+
+  #contact-btn{
+    font-size: 20px;
+    text-align: left;
+    margin: 10px;
+    padding: 15px;
+    background-color: #444654;
+    color: #e5e7eb;
+    border: 2px solid #e5e7eb;
+    border-radius: 2%;
   }
